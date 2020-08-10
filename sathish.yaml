@@ -1,0 +1,11 @@
+Resources:
+     Ec2Instance:
+        Type: 'AWS::EC2::Instance'
+        Properties:
+                InstanceType: t2.micro
+                ImageId: ami-0ff8a91507f77f867
+                Tags:
+                        -Key: "Name"
+                        value: !Join[" ",[Ec2, Instance, With, Sathish ]]
+
+                        
